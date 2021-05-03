@@ -4,9 +4,9 @@
   yield* is used to recursively call its Iterable or Stream function.
 - Equatable
 - Const
--Stateless and stateful?
--CrossAxisAlignment.stretch: full view
--ctr + alt + m
+- Stateless and stateful?
+- CrossAxisAlignment.stretch: full view
+- ctr + alt + m
 - Call native
 - Animation
 - Dio
@@ -22,6 +22,9 @@
     + InkWell() :A rectangular area of a Material that responds to touch.
 - CancelableOperation or CancelableCompleter : cancel the future async 2.5.0
 -  if (job.ratePerHour > 0.0) ...<Widget>[]
+- extension on libary: are a way to add functionality to existing libraries
+- Future.wait([])
+- @injectable: make sure inject GetIt
 - Test:
     - verifyZeroInteractions:
     - String fixtures(String name) => File('test/fixtures/${name}').readAsStringSync();
@@ -39,6 +42,10 @@
     + LazySingleton: is registered when is requested
     + @LazySingleton(as: IAuthFacade)
  - clean new technical from medium
+
+ -BLoc:
+    - BlocConsumer
+    - BlocListener
 
  DDD
  - Infrastructure:
