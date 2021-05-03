@@ -10,6 +10,7 @@
 - Call native
 - Animation
 - Dio
+- if(state.isSubmitting)...[]
 - keyboardType: TextInputType.emailAddress: set keyboard support for email format,
 - FirestoreService._(); create 1 instance and private contructor
 - final id = widget.job?.id ?? documentIdFromCurrentDate();
