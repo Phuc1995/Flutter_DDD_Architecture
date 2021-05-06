@@ -25,7 +25,7 @@
 -  if (job.ratePerHour > 0.0) ...<Widget>[]
 - extension on libary: are a way to add functionality to existing libraries
 - Future.wait([])
-- @injectable: make sure inject GetIt
+- @injectable: make sure inject to GetIt
 - Test:
     - verifyZeroInteractions:
     - String fixtures(String name) => File('test/fixtures/${name}').readAsStringSync();
@@ -58,3 +58,6 @@
     + Preventing illegal states by validating the state at the constructor
     + flutter pub run build_runner watch --delete-conflicting-outputs
  - Error.safeToString('$explation Failure was: $valueFailure') :The conversion is guaranteed to not throw, so it won't use the object's toString method.
+ - FireBase:
+    + _firestore.userDocument().noteCollection.doc(noteDto.id).set(noteDto.toJson());
+    + userDoc.noteCollection.doc(noteDto.id).update(noteDto.toJson());
