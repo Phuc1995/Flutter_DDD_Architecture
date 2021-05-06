@@ -25,7 +25,7 @@
 -  if (job.ratePerHour > 0.0) ...<Widget>[]
 - extension on libary: are a way to add functionality to existing libraries
 - Future.wait([])
-- @injectable: make sure inject GetIt
+- @injectable: make sure inject to GetIt
 - Test:
     - verifyZeroInteractions:
     - String fixtures(String name) => File('test/fixtures/${name}').readAsStringSync();
