@@ -1,15 +1,15 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_ddd/domain/core/failures.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:kt_dart/collection.dart';
 import 'package:flutter_ddd/domain/core/value_objects.dart';
 import 'package:flutter_ddd/domain/notes/todo_item.dart';
 import 'package:flutter_ddd/domain/notes/value_objects.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:kt_dart/collection.dart';
 
 part 'note.freezed.dart';
 
 @freezed
-abstract class Note with _$Note {
+abstract class Note implements _$Note {
   const Note._();
 
   const factory Note({
@@ -33,10 +33,7 @@ abstract class Note with _$Note {
           todos
               .getOrCrash()
               // Getting the failureOption from the TodoItem ENTITY - NOT a failureOrUnit from a VALUE OBJECT
-              .map((todoItem) {
-                print(todoItem.id);
-                return todoItem.failureOption;
-              })
+              .map((todoItem) => todoItem.failureOption)
               .filter((o) => o.isSome())
               // If we can't get the 0th element, the list is empty. In such a case, it's valid.
               .getOrElse(0, (_) => none())
@@ -44,6 +41,4 @@ abstract class Note with _$Note {
         )
         .fold((f) => some(f), (_) => none());
   }
-
 }
-

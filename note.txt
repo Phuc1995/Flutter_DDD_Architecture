@@ -10,6 +10,7 @@
 - Call native
 - Animation
 - Dio
+- floatingActionButton: A button displayed floating above [body], in the bottom right corner.
 - if(state.isSubmitting)...[]
 - keyboardType: TextInputType.emailAddress: set keyboard support for email format,
 - FirestoreService._(); create 1 instance and private contructor
@@ -47,6 +48,9 @@
  -BLoc:
     - BlocConsumer
     - BlocListener
+    - MultiBlocProvider:         BlocProvider<NoteWatcherBloc>(create: (context) => getIt<NoteWatcherBloc>()..add(const NoteWatcherEvent.watchAllStarted())),
+                                 BlocProvider<NoteActorBloc>(create: (context) => getIt<NoteActorBloc>())
+    -
 
  DDD
  - Infrastructure:

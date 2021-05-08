@@ -19,6 +19,7 @@ class NoteRepository implements INoteRepository {
   @override
   Stream<Either<NoteFailure, KtList<Note>>> watchAll() async* {
     final userDoc = await _firestore.userDocument();
+    //userDoc.collection('notes')
     yield* userDoc.noteCollection
         .orderBy('serverTimeStamp', descending: true)
         .snapshots()
@@ -76,7 +77,7 @@ class NoteRepository implements INoteRepository {
       }
     }
   }
-  
+
 
   @override
   Future<Either<NoteFailure, Unit>> update(Note note) async {

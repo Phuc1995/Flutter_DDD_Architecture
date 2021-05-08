@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_ddd/domain/auth/value_objects.dart';
 import 'package:flutter_ddd/domain/core/errors.dart';
-import 'package:flutter_ddd/domain/core/failure.dart';
+import 'package:flutter_ddd/domain/core/failures.dart';
 import 'package:meta/meta.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:uuid/uuid.dart';
