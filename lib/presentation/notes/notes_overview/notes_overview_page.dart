@@ -6,6 +6,7 @@ import 'package:flutter_ddd/application/auth/auth_bloc.dart';
 import 'package:flutter_ddd/application/notes/note_actor/note_actor_bloc.dart';
 import 'package:flutter_ddd/application/notes/note_watcher/note_watcher_bloc.dart';
 import 'package:flutter_ddd/injection.dart';
+import 'package:flutter_ddd/presentation/notes/notes_overview/widgets/notes_overview_body_widgets.dart';
 import 'package:flutter_ddd/presentation/routes/router.gr.dart';
 
 class NotesOverviewPage extends StatelessWidget {
@@ -64,8 +65,10 @@ class NotesOverviewPage extends StatelessWidget {
             actions: <Widget>[
             ],
           ),
+          body: NotesOverviewBody(),
           floatingActionButton: FloatingActionButton(
             onPressed: () {
+              // ExtendedNavigator.of(context).pushNoteFormPage(editedNote: null);
             },
             child: Icon(Icons.add),
           ),

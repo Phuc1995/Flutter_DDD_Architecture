@@ -1,5 +1,5 @@
 
-import 'package:flutter_ddd/domain/core/failure.dart';
+import 'package:flutter_ddd/domain/core/failures.dart';
 
 class NotAuthenticatedError extends Error {}
 

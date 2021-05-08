@@ -19,6 +19,8 @@ import 'application/notes/note_actor/note_actor_bloc.dart';
 import 'application/notes/note_form/note_form_bloc.dart';
 import 'infrastructure/notes/note_repository.dart';
 import 'application/notes/note_watcher/note_watcher_bloc.dart';
+import 'application/notes/note_watcher/note_watcher/note_watcher_bloc.dart'
+    as flutter_ddd;
 import 'application/auth/sign_in_form/sign_in_form_bloc.dart';
 
 /// adds generated dependencies
@@ -32,6 +34,7 @@ GetIt $initGetIt(
   final gh = GetItHelper(get, environment, environmentFilter);
   final firebaseInjectableModule = _$FirebaseInjectableModule();
   gh.lazySingleton<FirebaseAuth>(() => firebaseInjectableModule.firebaseAuth);
+  gh.lazySingleton<FirebaseFirestore>(() => firebaseInjectableModule.firestore);
   gh.lazySingleton<GoogleSignIn>(() => firebaseInjectableModule.googleSignIn);
   gh.lazySingleton<IAuthFacade>(
       () => FirebaseAuthFacade(get<FirebaseAuth>(), get<GoogleSignIn>()));
@@ -40,6 +43,8 @@ GetIt $initGetIt(
   gh.factory<NoteActorBloc>(() => NoteActorBloc(get<INoteRepository>()));
   gh.factory<NoteFormBloc>(() => NoteFormBloc(get<INoteRepository>()));
   gh.factory<NoteWatcherBloc>(() => NoteWatcherBloc(get<INoteRepository>()));
+  gh.factory<flutter_ddd.NoteWatcherBloc>(
+      () => flutter_ddd.NoteWatcherBloc(get<INoteRepository>()));
   gh.factory<SignInFormBloc>(() => SignInFormBloc(get<IAuthFacade>()));
   gh.factory<AuthBloc>(() => AuthBloc(get<IAuthFacade>()));
   return get;

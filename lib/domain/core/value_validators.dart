@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_ddd/domain/auth/value_objects.dart';
-import 'package:flutter_ddd/domain/core/failure.dart';
+import 'package:flutter_ddd/domain/core/failures.dart';
 import 'package:kt_dart/collection.dart';
 
-Either<ValueFailure<String>, String> validateMaxStringLength(
+Either<ValueFailure<String>, String>  validateMaxStringLength(
   String input,
   int maxLength,
 ) {

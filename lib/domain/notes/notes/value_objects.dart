@@ -1,22 +1,23 @@
 import 'dart:ui';
 
 import 'package:dartz/dartz.dart';
+import 'package:kt_dart/kt.dart';
 import 'package:flutter_ddd/domain/core/failures.dart';
 import 'package:flutter_ddd/domain/core/value_objects.dart';
 import 'package:flutter_ddd/domain/core/value_transformers.dart';
 import 'package:flutter_ddd/domain/core/value_validators.dart';
-import 'package:kt_dart/collection.dart';
 
 class NoteBody extends ValueObject<String> {
   @override
   final Either<ValueFailure<String>, String> value;
 
-  static const maxLength = 5;
+  static const maxLength = 1000;
 
   factory NoteBody(String input) {
     assert(input != null);
-    return NoteBody._(validateMaxStringLength(input, maxLength)
-        .flatMap(validateStringNotEmpty));
+    return NoteBody._(
+      validateMaxStringLength(input, maxLength).flatMap(validateStringNotEmpty),
+    );
   }
 
   const NoteBody._(this.value);
@@ -26,7 +27,7 @@ class TodoName extends ValueObject<String> {
   @override
   final Either<ValueFailure<String>, String> value;
 
-  static const maxLength = 5;
+  static const maxLength = 30;
 
   factory TodoName(String input) {
     assert(input != null);
@@ -56,7 +57,9 @@ class NoteColor extends ValueObject<Color> {
 
   factory NoteColor(Color input) {
     assert(input != null);
-    return NoteColor._(right(makeColorOpaque(input)));
+    return NoteColor._(
+      right(makeColorOpaque(input)),
+    );
   }
 
   const NoteColor._(this.value);
@@ -70,7 +73,9 @@ class List3<T> extends ValueObject<KtList<T>> {
 
   factory List3(KtList<T> input) {
     assert(input != null);
-    return List3._(validateMaxListLength(input, maxLength));
+    return List3._(
+      validateMaxListLength(input, maxLength),
+    );
   }
 
   const List3._(this.value);
