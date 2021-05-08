@@ -22,6 +22,8 @@
     + Expanded(): expands a child of a Row, Column, or Flex so that the child fills the available space.
     + Placeholder(): This widget is useful during development to indicate that the interface is not yet complete.
     + InkWell() :A rectangular area of a Material that responds to touch.
+    + Wrap(): using for Column and Row
+    + Theme.of(context).disabledColor
 - CancelableOperation or CancelableCompleter : cancel the future async 2.5.0
 -  if (job.ratePerHour > 0.0) ...<Widget>[]
 - extension on libary: are a way to add functionality to existing libraries
