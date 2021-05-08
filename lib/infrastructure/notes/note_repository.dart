@@ -76,7 +76,7 @@ class NoteRepository implements INoteRepository {
       }
     }
   }
-  
+
 
   @override
   Future<Either<NoteFailure, Unit>> update(Note note) async {
