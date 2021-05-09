@@ -32,8 +32,8 @@ This is the repository for the flutter app built using Domain-Driven Design foll
  
 
 
-### Uncle Bob's Clean Architecture Proposal
-![CleanArchitecture](https://user-images.githubusercontent.com/46106467/113936871-0b3a3a80-9816-11eb-9739-6e54665d234a.jpg)
+### Clean Architecture Proposal
+![CleanArchitecture](https://www.google.com/search?q=DDD+flutter&rlz=1C1GCEA_enVN912VN912&sxsrf=ALeKk02sMuIT5vMb6IBWhuZN52ZaifYftA:1620569824462&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi4y-GF5bzwAhUFc3AKHRZtC7oQ_AUoAXoECAEQAw&biw=1536&bih=722#imgrc=JCIo5tJzITr-jM)
 
 ### Flowchart
 ![Clean-Architecture-Flutter-Diagram](https://user-images.githubusercontent.com/46106467/113936926-1b521a00-9816-11eb-9d30-186b54264c87.png)
