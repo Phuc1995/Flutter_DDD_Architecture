@@ -40,4 +40,5 @@ This is the repository for the flutter app built using Domain-Driven Design foll
 
 
 ### Screenshots
+<img src="https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/screen_shot_1.jpeg" width="48">
 ![](https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/screen_shot_1.jpeg){:height="50%" width="50%"}
