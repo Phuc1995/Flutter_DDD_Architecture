@@ -36,12 +36,8 @@ This is the repository for the flutter app built using Domain-Driven Design foll
 ![CleanArchitecture](https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/Architecture_Proposal.PNG)
 
 ### Flowchart
-![Clean-Architecture-Flutter-Diagram](https://user-images.githubusercontent.com/46106467/113936926-1b521a00-9816-11eb-9d30-186b54264c87.png)
+![Clean-Architecture-Flutter-Diagram](https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/Flow_chart.PNG)
 
 
 ### Screenshots
-
-<div>
-<img src="https://user-images.githubusercontent.com/46106467/113937501-e0041b00-9816-11eb-8061-c3aa43e32202.png" width="350" title="Home Page">
-<img src="https://user-images.githubusercontent.com/46106467/113937507-e2667500-9816-11eb-88b5-ef664812d701.png" width="350" title="Trivia Page">
-</div>
+(https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/screen_shot_1.jpeg)
