@@ -27,11 +27,6 @@ This is the repository for the flutter app built using Domain-Driven Design foll
 
 - [**Kt Dart**](https://pub.dev/packages/kt_dart), This project is a port of kotlin-stdlib for Dart/Flutter projects. It includes collections (KtList, KtMap, KtSet) with 150+ methods as well as other useful packages.
 
-
- 
- 
-
-
 ### Clean Architecture Proposal
 ![CleanArchitecture](https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/Architecture_Proposal.PNG)
 
@@ -40,5 +35,4 @@ This is the repository for the flutter app built using Domain-Driven Design foll
 
 
 ### Screenshots
-<img src="https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/screen_shot_1.jpeg" width="48">
-![](https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/screen_shot_1.jpeg){:height="50%" width="50%"}
+<img src="https://github.com/Phuc1995/Flutter_DDD_Architecture/blob/main/image/screen_shot_1.jpeg" width="200">
