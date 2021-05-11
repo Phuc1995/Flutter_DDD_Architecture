@@ -24,6 +24,9 @@
     + InkWell() :A rectangular area of a Material that responds to touch.
     + Wrap(): using for Column and Row
     + Theme.of(context).disabledColor
+    + InkResponse(): Creates an area of a [Material] that responds to touch.
+    + Flutter_hook(): using replace for Stateful
+    + AnimatedSwitcher():
 - CancelableOperation or CancelableCompleter : cancel the future async 2.5.0
 -  if (job.ratePerHour > 0.0) ...<Widget>[]
 - extension on libary: are a way to add functionality to existing libraries
